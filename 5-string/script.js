@@ -1,4 +1,4 @@
-function verificaFib(){
+function inverteStr(){
    let valor = document.getElementById('valor').value;
    let resDiv = document.getElementById('res');
 
@@ -8,5 +8,9 @@ function verificaFib(){
    resDiv.appendChild(resultadoP);
 
    let valorDividido = valor.split("");
-   
+
+   for (let i = (valorDividido.length-1); i >= 0; i--) {
+      resultadoP.innerHTML += valorDividido[i];
+   }
+
 }
